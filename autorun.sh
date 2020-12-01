@@ -7,7 +7,7 @@ sudo apt-get --yes install php
 sudo chmod -R +x ./run*
 
 #more dependencies
-sudo ./dependencies.php
+./dependencies.php
 
 #and run
 #(all relevant output must be in stdout)
