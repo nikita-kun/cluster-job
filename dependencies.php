@@ -2,11 +2,10 @@
 <?php
 
 /* Config dependencies */
-$apt = array("install" => ["python3", "python3-pip", 'screen'],
+$apt = array("install" => ["python3", "python3-pip", 'screen',"libgmp-dev","libmpfr-dev", "libmpc-dev"],
 	"remove" => ["apport", "network-manager-config-connectivity-ubuntu"]);
 
 $pip3 = array("install" => ["scipy", "sympy", "timeout-decorator", "gmpy", "gmpy2"]);
-
 
 echo("Downloading dependencies\n");
 foreach ($apt as $command => $values){
